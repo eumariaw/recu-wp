@@ -1,9 +1,8 @@
 <?php
-    include "cadastroLivros.inc.php"; //incluir nesta página
     session_start(); //iniciar sessão
     
     if (!isset($_SESSION["username"])){ //se a sessão de username for iniciada ela é buscado o login da pessoa para que ela consiga acessar o site tranquilamente
-        if (!isset($_POST["login"])){ // caso não encontre ficará em um looping na página d elogin
+        if (!isset($_POST["login"])){ // caso não encontre ficará em um looping na página de login
             header('location: login.php'); 
             exit(); 
         }
@@ -16,6 +15,16 @@
     }else{
         $id = $_POST["id"]; //caso não comece na página 1 busca a página desejada
     }
+
+    include "login.inc";
+
+        $verificador = verificandoUsurario($_POST["login"], $_POST["password"], "player.json");
+
+        if($verificador == FALSE){
+            header("Location: login.php");
+        }
+
+    $_SESSION ["name"] = $_POST ["login"];
 
 ?>
 
@@ -33,7 +42,11 @@
 
         <main>
 
-            <h1> MINHA LISTA DE LIVROS </h1>
+            <h1> MINHA LISTA DE PRESENTES </h1>
+
+            <a href = "cadastroPresente.php"> Cadastrar presente </a>
+
+            
 
         </main>
     </body>

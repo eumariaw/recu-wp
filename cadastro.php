@@ -11,7 +11,7 @@
     <body>
         <main>
             <h1> CADASTRO </h1>
-            <form action = "index.php" method = "post"> <!para onde os dados recolhidos nesta página devem ser enviados>
+            <form action = "testCadastro.php" method = "post"> <!para onde os dados recolhidos nesta página devem ser enviados>
 
                 <div>
                     
@@ -19,13 +19,13 @@
                     <input id = "name" type = "text" name = "name" required><br> <!identidade, tipo e nome de como e onde vai ser salvo >
 
                     <label for = "login"> Login: </label>
-                    <input id = "login" type = "text" required><br>
+                    <input id = "login" type = "text" name = "login" required><br>
 
                     <label for = "password"> Senha: </label>
-                    <input id = "password" type = "password" required><br>
+                    <input id = "password" type = "password" name = "password" required><br>
 
                     <label for = "email"> Email: </label>
-                    <input id = "email" type = "email" required><br>
+                    <input id = "email" type = "email" name = "email" required><br>
                 
                 </div>
                 <input type = "submit" value = "OK" class = "botao"> <!tipo, valor e classificação da finalização do cadastro>

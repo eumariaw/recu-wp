@@ -13,9 +13,9 @@
         <div class = "conatiner">
             <div class = "content">
                 <main>
-                    <h2> Este login já exite</h2>
+                    <h2> Este cadastro já exite</h2>
                 </main>
-                <a hret = "index.php"><button> Fazer login</button></a>
+                <a href = "login.php"><button> Fazer login</button></a>
             </div>
         </div>
     </body>
