@@ -5,7 +5,6 @@
         public $login;
         public $password;
         public $email;
-
         public $listaPresentes = [];
 
         public function __construct($name, $login, $password, $email){ //construção de uma função

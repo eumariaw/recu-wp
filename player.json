@@ -1,9 +1,43 @@
 [
     {
-        "name": "d",
-        "login": "d",
-        "password": "d",
-        "email": "d@d",
+        "name": "nome",
+        "login": "login",
+        "password": "123",
+        "email": "l@l",
         "listaPresentes": []
+    },
+    {
+        "name": "waleska",
+        "login": "euwa",
+        "password": "3453",
+        "email": "waleska@maria",
+        "listaPresentes": [
+            {
+                "name": "presente",
+                "tipo": "a",
+                "cor": "a",
+                "link": "a"
+            }
+        ]
+    },
+    {
+        "name": "fjfdh.",
+        "login": "jj",
+        "password": "jj",
+        "email": "ghdmvamef@kkjfld",
+        "listaPresentes": [
+            {
+                "name": "presente",
+                "tipo": "presente",
+                "cor": "cor de presente",
+                "link": "link de um presente"
+            },
+            {
+                "name": "a",
+                "tipo": "a",
+                "cor": "a",
+                "link": "a"
+            }
+        ]
     }
 ]

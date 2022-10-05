@@ -10,13 +10,8 @@
         $_SESSION["username"] = $_POST["login"];
     }
 
-    if(!isset($_POST["id"])){
-        $id = 1; // começa na página 1
-    }else{
-        $id = $_POST["id"]; //caso não comece na página 1 busca a página desejada
-    }
-
-    include "login.inc";
+    if(!isset($_SESSION["name"]) || $_SESSION["name"] == ""){
+        include "login.inc";
 
         $verificador = verificandoUsurario($_POST["login"], $_POST["password"], "player.json");
 
@@ -24,8 +19,8 @@
             header("Location: login.php");
         }
 
-    $_SESSION ["name"] = $_POST ["login"];
-
+        $_SESSION["name"] = $_POST["login"];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +41,22 @@
 
             <a href = "cadastroPresente.php"> Cadastrar presente </a>
 
-            
+            <?php 
+                $fileUsers = json_decode(file_get_contents("player.json")); //array com tudo o que tem no meu json
+                foreach($fileUsers as $usuarios){
+                    if($usuarios->login == $_SESSION["name"]){
+                        echo "<hr>";
+                        for($i = 0; $i < count($usuarios->listaPresentes); $i++){
+                            echo "<p>" . $usuarios->listaPresentes[$i]->name . "</p>";
+                            echo "<p>" . $usuarios->listaPresentes[$i]->tipo . "</p>";
+                            echo "<p>" . $usuarios->listaPresentes[$i]->cor . "</p>";
+                            echo "<p>" . $usuarios->listaPresentes[$i]->link . "</p>";
+                            echo "<hr>";
+
+                        }
+                    }
+                }
+            ?>
 
         </main>
     </body>

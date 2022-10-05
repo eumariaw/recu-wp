@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(isset($_POST['botao'])){
+        $presente = new Player($_POST['name'], $_POST['tipo'], $_POST['cor'], $_POST['link']);
+    }
+    echo "<p>" . $_SESSION["name"] . "</p>";
+    echo "<p>" . $_SESSION["username"] . "</p>";
+    echo "<p>" . $_SESSION["login"] . "</p>";
+?>
 <DOCTYPE html> <!dizer que o doc é em html>
 
 <html lang = "pt-br"> <!linguagem>
