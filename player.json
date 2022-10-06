@@ -1,42 +1,41 @@
 [
     {
-        "name": "nome",
-        "login": "login",
-        "password": "123",
-        "email": "l@l",
-        "listaPresentes": []
-    },
-    {
         "name": "waleska",
-        "login": "euwa",
-        "password": "3453",
-        "email": "waleska@maria",
+        "login": "wa",
+        "password": "123",
+        "email": "wa@wa",
         "listaPresentes": [
             {
-                "name": "presente",
-                "tipo": "a",
-                "cor": "a",
-                "link": "a"
+                "name": "s",
+                "tipo": "s",
+                "cor": "s",
+                "link": "s"
+            },
+            {
+                "name": "d",
+                "tipo": "d",
+                "cor": "d",
+                "link": "d"
+            },
+            {
+                "name": "aa",
+                "tipo": "bb",
+                "cor": "cc",
+                "link": "dd"
             }
         ]
     },
     {
-        "name": "fjfdh.",
-        "login": "jj",
-        "password": "jj",
-        "email": "ghdmvamef@kkjfld",
+        "name": "asd",
+        "login": "fer",
+        "password": "123",
+        "email": "asda@ads",
         "listaPresentes": [
             {
-                "name": "presente",
-                "tipo": "presente",
-                "cor": "cor de presente",
-                "link": "link de um presente"
-            },
-            {
-                "name": "a",
-                "tipo": "a",
-                "cor": "a",
-                "link": "a"
+                "name": "asdasd",
+                "tipo": "asdas",
+                "cor": "414133",
+                "link": "552323423"
             }
         ]
     }

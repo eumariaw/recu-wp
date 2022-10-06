@@ -39,8 +39,6 @@
 
             <h1> MINHA LISTA DE PRESENTES </h1>
 
-            <a href = "cadastroPresente.php"> Cadastrar presente </a>
-
             <?php 
                 $fileUsers = json_decode(file_get_contents("player.json")); //array com tudo o que tem no meu json
                 foreach($fileUsers as $usuarios){
