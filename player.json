@@ -1,3 +1,36 @@
 [
-    
+    {
+        "name": "waleska",
+        "login": "waleska",
+        "password": "123",
+        "email": "waleska@waleska",
+        "listaPresentes": [
+            {
+                "name": "copo",
+                "tipo": "ta\u00e7a",
+                "cor": "preto",
+                "link": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.paodeacucar.com%2Fproduto%2F289989%2Ftaca-para-vinho-barone-385ml&psig=AOvVaw2Pr9d9MBNWaYjfbrYmVP_g&ust=1665245645577000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCPCB7crBzvoCFQAAAAAdAAAAABAE"
+            },
+            {
+                "name": "lapis",
+                "tipo": "lapis",
+                "cor": "preto",
+                "link": "djkshfj"
+            }
+        ]
+    },
+    {
+        "name": "pt",
+        "login": "pt",
+        "password": "pt",
+        "email": "pt@pt",
+        "listaPresentes": [
+            {
+                "name": "s",
+                "tipo": "s",
+                "cor": "s",
+                "link": "s"
+            }
+        ]
+    }
 ]
