@@ -39,6 +39,10 @@
 
             <h1> MINHA LISTA DE PRESENTES </h1>
 
+            <footer>
+                <p><a href = "cadastroPresente.php">CADASTRAR NOVO PRESENTE</a></p> <!caso a pessoa já seja cadastrada, ela vai para a página apenas de login, não será possível fazer o cadastro novamente>
+            </footer>
+
             <?php 
                 $fileUsers = json_decode(file_get_contents("player.json")); //array com tudo o que tem no meu json
                 foreach($fileUsers as $usuarios){
